@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 const isGitHubPages = process.env.GITHUB_PAGES === 'true';
-const repositoryName = '/vq_new'; // Replace with your repo name
+const repositoryName = 'vq_new'; // Replace with your repo name
 
 const nextConfig = {
   // Enable static export
