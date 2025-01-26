@@ -14,9 +14,9 @@ const nextConfig = {
   assetPrefix: isGitHubPages ? `/${repositoryName}/` : '',
   
   // Disable server-side features not compatible with static export
-  images: {
+ /* images: {
     unoptimized: true
-  },
+  },*/
   
   // Handle static exports and routing
   trailingSlash: true,
