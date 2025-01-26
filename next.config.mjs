@@ -16,10 +16,6 @@ const nextConfig = {
   // Disable server-side features not compatible with static export
    images: { unoptimized: true } ,
   
-  // Handle static exports and routing
-  trailingSlash: true,
- 
-
   // Webpack configuration for any special requirements
   webpack: (config, { isServer }) => {
     // Add any custom webpack configurations
