@@ -62,7 +62,7 @@ function ListItem({
       {/* Image */}
       <div className="flex-shrink-0">
         <Image 
-          src={image} 
+          src={process.env.PATH+image} 
           alt={title} 
           width={100} 
           height={100} 

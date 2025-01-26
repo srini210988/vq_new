@@ -14,9 +14,7 @@ const nextConfig = {
   assetPrefix: isGitHubPages ? `/${repositoryName}/` : '',
   
   // Disable server-side features not compatible with static export
-  images: {
-    path: `/${repositoryName}`
-  },
+   images: { unoptimized: true } ,
   
   // Handle static exports and routing
   trailingSlash: true,
@@ -26,6 +24,10 @@ const nextConfig = {
   webpack: (config, { isServer }) => {
     // Add any custom webpack configurations
     return config;
+  },
+  
+  env: {
+    PATH: isGitHubPages ? `/${repositoryName}` : '',
   }
 }
 

@@ -30,7 +30,7 @@ export default function Login() {
       
 
       <div className="flex justify-center space-y-4 p-2 bg-slate-100 rounded-md w-100 md:w-1/3 lg:w-1/4" onClick={callAuth}>
-      <div className="p-2 px-0"><Image src="/gmail-ico.png" alt="Sign In" width={36} height={36} /></div>
+      <div className="p-2 px-0"><Image src={`${process.env.PATH}/gmail-ico.png`} alt="Sign In" width={36} height={36} /></div>
        <div className='text-sm font-black px-2'>Sign in with Google</div>
       </div>
     </div>
